@@ -1,0 +1,141 @@
+html{
+	font-family: sans-serif;
+}
+
+select, input[type="text"],#goback{
+	width:75%;
+	margin-left:12vw;
+	margin-top:2vh;
+	margin-bottom:2vh;
+	font-weight: bold;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent;
+	background-repeat: no-repeat;
+	border: 2px solid rgb(177, 250, 155);
+	border-radius: .25rem;
+	padding: 1rem;
+	font-size:1rem;
+
+}
+
+body{
+	background-image: url(pattern.svg);
+}
+
+input,#goback{
+	background-color:white;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	font-weight: bold;
+	display: inline-block;
+	padding:1rem;
+	margin:1vw;
+	border-color: rgb(177, 250, 155);
+}
+
+select {
+	box-sizing:content-box;
+	background-position-x: 100%;
+	background-position-y: 5px;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+}
+label{
+	font-weight: bold;
+	margin-left: 10vw;
+}
+
+input:focus ,button:focus, a:focus, select:focus,#goback:focus{
+	outline: none !important;
+	border:2px solid green;
+	box-shadow: 0 0 10px #719ECE;
+	background-color: rgb(240, 245, 220);
+}
+
+a{
+	text-decoration: none;
+	color:black;
+	border: 0;
+}
+
+.items:hover{
+
+	box-shadow: 0 0 10px #719ECE;
+	border-color: #97E8B1;	
+
+}
+
+a:focus{
+	background-color: rgb(104,173,92);
+}
+
+input[type=submit]
+{
+	background-color:rgb(104,173,92);
+	color:white;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin:1vw;
+}
+
+#header{
+	color:black;
+	text-align: center;
+	font-size: 2rem;
+	margin:2vh 0 2vh 0;
+}
+
+.content{
+	display:flex;
+	flex-direction: column;
+	margin: 0 30vw;
+}
+
+.items{
+	color:white;
+	text-align: center;
+	font-size: 1rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	background-color: rgb(104,173,92);
+	margin: 1rem;
+	border-style: outset;
+	border-color: white;
+}
+
+#goback{
+	font-weight: none;
+	width:auto;
+}
+
+@media (max-width: 800px)
+{
+	h2{
+		font-size:1rem;
+	}
+	.items{
+		width:100%;
+		margin:1vh 1vw;
+	}
+	#header
+	{
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	body{
+		margin:0 0;
+	}
+
+}
+
+@media (max-width: 1088px)
+{
+	.content{
+		margin:0 20vw;
+	}
+}
